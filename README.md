@@ -12,10 +12,10 @@ define command{<br/>
 2.-Define Service in Host.cfg (this example check file c:\test.log and find string Error)<br/>
 
 define service{<br/>
-	use						        generic-service<br/>
-	host_name				      YOUR_HOST<br/>
-	service_description		Check_logs_test<br/>
-	check_command			    check_winlog! -a c:/test.log Error<br/>
+	use &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp generic-service<br/>
+	host_name &nbsp&nbsp&nbsp&nbsp&nbsp&nbs YOUR_HOST<br/>
+	service_description &nbsp&nbsp&nbsp&nbsp Check_logs_test<br/>
+	check_command &nbsp&nbsp&nbsp&nbsp&nbsp check_winlog! -a c:/test.log Error<br/>
 }
 
 3.- Put Check_WinLog.ps1 in C:\Program Files\NSClient++\scripts<br/>
